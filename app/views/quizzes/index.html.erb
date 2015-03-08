@@ -1,0 +1,13 @@
+<h1>Humble Quiz App</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+ 
+  <% @quizzes.each do |quiz| %>
+    <tr>
+      <td><%= link_to quiz.title, quiz_path(quiz) %></td>
+    </tr>
+  <% end %>
+</table>
