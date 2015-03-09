@@ -1,0 +1,29 @@
+<p>
+  <h1>
+    <%= @quiz.title %>
+  </h1>
+</p>
+
+<% @quiz.questions.each do |question| %>
+  <h2>
+    <%= question.text %>
+  </h2>
+    <p>
+      <%= radio_button_tag question, 'id' %>
+      <label for="<%= question.id %>_id"><%= question.answer_one %></label>
+    </p>
+    <p>
+      <%= radio_button_tag question.id, 'id' %>
+      <label for="<%= question.id %>_id"><%= question.answer_two %></label>
+    </p>
+    <p>
+      <%= radio_button_tag question.id, 'id' %>
+      <label for="<%= question.id %>_id"><%= question.answer_three %></label>
+    </p>
+    <p>
+      <%= radio_button_tag question.id, 'id' %>
+      <label for="<%= question.id %>_id"><%= question.answer_four %></label>
+    </p>
+<% end %>
+
+ 

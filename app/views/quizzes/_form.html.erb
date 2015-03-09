@@ -1,0 +1,30 @@
+<h2>Add a question:</h2>
+<%= form_for([@quiz, @quiz.questions.build]) do |f| %>
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_field :text %>
+  </p>
+  <p>
+    <%= f.label :answer_one %><br>
+    <%= f.text_field :answer_one %>
+  </p>
+  <p>
+    <%= f.label :answer_two %><br>
+    <%= f.text_field :answer_two %>
+  </p>
+  <p>
+    <%= f.label :answer_three %><br>
+    <%= f.text_field :answer_three %>
+  </p>
+  <p>
+    <%= f.label :answer_four %><br>
+    <%= f.text_field :answer_four %>
+  </p>
+  <p>
+    <%= f.label :correct_answer %><br>
+    <%= f.number_field :correct_answer %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
