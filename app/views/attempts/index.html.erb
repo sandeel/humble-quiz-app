@@ -1,0 +1,8 @@
+<h1>Attempts for quiz "<%= @quiz.title %>"</h1>
+
+<% @quiz.attempts.each do |attempt| %>
+
+<p><%= attempt.result %>
+
+<% end %>
+ 
