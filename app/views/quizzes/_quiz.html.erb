@@ -9,20 +9,19 @@
     <%= question.text %>
   </h2>
     <p>
-      <%= radio_button_tag question, 'id' %>
-      <label for="<%= question.id %>_id"><%= question.answer_one %></label>
+      <input type="radio" id="question_<%= question.id %>_1" name="question_<%= question.id %>" value="answer">
+      <label for="question_<%= question.id %>_1"><%= question.answer_one %></label>
     </p>
     <p>
-      <%= radio_button_tag question.id, 'id' %>
-      <label for="<%= question.id %>_id"><%= question.answer_two %></label>
+      <input type="radio" id="question_<%= question.id %>_2" name="question_<%= question.id %>" value="answer">
+      <label for="question_<%= question.id %>_2"><%= question.answer_two %></label>
+    </p>
+      <input type="radio" id="question_<%= question.id %>_3" name="question_<%= question.id %>" value="answer">
+      <label for="question_<%= question.id %>_3"><%= question.answer_three %></label>
     </p>
     <p>
-      <%= radio_button_tag question.id, 'id' %>
-      <label for="<%= question.id %>_id"><%= question.answer_three %></label>
-    </p>
-    <p>
-      <%= radio_button_tag question.id, 'id' %>
-      <label for="<%= question.id %>_id"><%= question.answer_four %></label>
+      <input type="radio" id="question_<%= question.id %>_4" name="question_<%= question.id %>" value="answer">
+      <label for="question_<%= question.id %>_4"><%= question.answer_four %></label>
     </p>
 <% end %>
 
