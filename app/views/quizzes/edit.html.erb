@@ -1,2 +1,38 @@
-<%= render 'quiz' %>
+<p>
+  <h1>
+    Edit <%= @quiz.title %>
+  </h1>
+</p>
+
+<% @quiz.questions.each do |question| %>
+  <h2>
+    <%= question.text %>
+  </h2>
+    <p>
+      <%= radio_button_tag("question_".concat(question.id.to_s), 1) %>
+      <label for="<%= question.id %>_1"><%= question.answer_one %></label>
+    </p>
+    <p>
+      <%= radio_button_tag("question_".concat(question.id.to_s), 2) %>
+      <label for="<%= question.id %>_2"><%= question.answer_two %></label>
+    </p>
+      <%= radio_button_tag("question_".concat(question.id.to_s), 3) %>
+      <label for="<%= question.id %>_3"><%= question.answer_three %></label>
+    </p>
+    <p>
+      <%= radio_button_tag("question_".concat(question.id.to_s), 4) %>
+      <label for="<%= question.id %>_4"><%= question.answer_four %></label>
+    </p>
+    <p>
+      <%= link_to 'Delete Question', [question.quiz, question],
+                   method: :delete,
+                   data: { confirm: 'Are you sure?' } %>
+    </p>
+<% end %>
+
+ 
+
+
+
+
 <%= render 'form' %>

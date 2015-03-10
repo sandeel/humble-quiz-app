@@ -4,6 +4,14 @@ class QuestionsController < ApplicationController
     @question = @quiz.questions.create(question_params)
     redirect_to quiz_path(@quiz)
   end
+
+  def destroy
+    @quiz = Quiz.find(params[:quiz_id])
+    @question = @quiz.questions.find(params[:id])
+    @question.destroy
+    redirect_to edit_quiz_path(@quiz)
+  end
+ 
  
   private
     def question_params
