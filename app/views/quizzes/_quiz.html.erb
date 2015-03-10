@@ -9,19 +9,19 @@
     <%= question.text %>
   </h2>
     <p>
-      <input type="radio" id="question_<%= question.id %>_1" name="question_<%= question.id %>" value="answer">
-      <label for="question_<%= question.id %>_1"><%= question.answer_one %></label>
+      <%= radio_button_tag("question_".concat(question.id.to_s), 1) %>
+      <label for="<%= question.id %>_1"><%= question.answer_one %></label>
     </p>
     <p>
-      <input type="radio" id="question_<%= question.id %>_2" name="question_<%= question.id %>" value="answer">
-      <label for="question_<%= question.id %>_2"><%= question.answer_two %></label>
+      <%= radio_button_tag("question_".concat(question.id.to_s), 2) %>
+      <label for="<%= question.id %>_2"><%= question.answer_two %></label>
     </p>
-      <input type="radio" id="question_<%= question.id %>_3" name="question_<%= question.id %>" value="answer">
-      <label for="question_<%= question.id %>_3"><%= question.answer_three %></label>
+      <%= radio_button_tag("question_".concat(question.id.to_s), 3) %>
+      <label for="<%= question.id %>_3"><%= question.answer_three %></label>
     </p>
     <p>
-      <input type="radio" id="question_<%= question.id %>_4" name="question_<%= question.id %>" value="answer">
-      <label for="question_<%= question.id %>_4"><%= question.answer_four %></label>
+      <%= radio_button_tag("question_".concat(question.id.to_s), 4) %>
+      <label for="<%= question.id %>_4"><%= question.answer_four %></label>
     </p>
 <% end %>
 

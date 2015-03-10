@@ -1,8 +1,6 @@
 <%= form_for([@quiz, @quiz.attempts.build]) do |f| %>
 <%= render 'quiz' %>
-    <%= f.label :result %><br>
-    <%= f.text_field :result %>
   <p>
-    <%= f.submit %>
+    <%= f.submit "Finished!" %>
   </p>
 <% end %>
