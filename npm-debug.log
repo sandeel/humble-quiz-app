@@ -1,0 +1,153 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'grooveshark-cli' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'grooveshark-cli', null ]
+6 verbose cache add name=undefined spec="grooveshark-cli" args=["grooveshark-cli",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'grooveshark-cli',
+7 verbose parsed url   path: 'grooveshark-cli',
+7 verbose parsed url   href: 'grooveshark-cli' }
+8 silly lockFile 479a827b-grooveshark-cli grooveshark-cli
+9 verbose lock grooveshark-cli /home/daniel/.npm/479a827b-grooveshark-cli.lock
+10 silly lockFile 479a827b-grooveshark-cli grooveshark-cli
+11 silly lockFile 479a827b-grooveshark-cli grooveshark-cli
+12 verbose addNamed [ 'grooveshark-cli', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 00a2ed8f-grooveshark-cli grooveshark-cli@
+15 verbose lock grooveshark-cli@ /home/daniel/.npm/00a2ed8f-grooveshark-cli.lock
+16 silly addNameRange { name: 'grooveshark-cli', range: '*', hasData: false }
+17 verbose request where is /grooveshark-cli
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 848f1d57caa4354d
+20 verbose url raw /grooveshark-cli
+21 verbose url resolving [ 'https://registry.npmjs.org/', './grooveshark-cli' ]
+22 verbose url resolved https://registry.npmjs.org/grooveshark-cli
+23 verbose request where is https://registry.npmjs.org/grooveshark-cli
+24 info trying registry request attempt 1 at 11:19:12
+25 http GET https://registry.npmjs.org/grooveshark-cli
+26 http 200 https://registry.npmjs.org/grooveshark-cli
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Tue, 17 Mar 2015 11:19:16 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"25GVGX4A4AUJ1O9GS0F4NR5OG"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '32406',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-ams4137-AMS',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1426591156.693699,VS0,VE187',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'grooveshark-cli', range: '*', hasData: true }
+29 silly addNameRange versions [ 'grooveshark-cli',
+29 silly addNameRange   [ '0.0.1', '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4' ] ]
+30 verbose addNamed [ 'grooveshark-cli', '0.1.4' ]
+31 verbose addNamed [ '0.1.4', '0.1.4' ]
+32 silly lockFile 39208b42-grooveshark-cli-0-1-4 grooveshark-cli@0.1.4
+33 verbose lock grooveshark-cli@0.1.4 /home/daniel/.npm/39208b42-grooveshark-cli-0-1-4.lock
+34 silly lockFile 27dde5d5-rk-cli-grooveshark-cli-0-1-4-tgz https://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz
+35 verbose lock https://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz /home/daniel/.npm/27dde5d5-rk-cli-grooveshark-cli-0-1-4-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz',
+36 verbose addRemoteTarball   '9b25463c8126b6e020d8608d2eaf03385ba1ec81' ]
+37 info retry fetch attempt 1 at 11:19:14
+38 verbose fetch to= /tmp/npm-6779-H2494nj0/registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz
+39 http GET https://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz
+40 http 200 https://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz
+41 silly lockFile 27dde5d5-rk-cli-grooveshark-cli-0-1-4-tgz https://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz
+42 silly lockFile 27dde5d5-rk-cli-grooveshark-cli-0-1-4-tgz https://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz
+43 silly lockFile 39208b42-grooveshark-cli-0-1-4 grooveshark-cli@0.1.4
+44 silly lockFile 39208b42-grooveshark-cli-0-1-4 grooveshark-cli@0.1.4
+45 silly lockFile 00a2ed8f-grooveshark-cli grooveshark-cli@
+46 silly lockFile 00a2ed8f-grooveshark-cli grooveshark-cli@
+47 silly resolved [ { name: 'grooveshark-cli',
+47 silly resolved     version: '0.1.4',
+47 silly resolved     description: 'Command line tools for Grooveshark',
+47 silly resolved     main: 'lib/grooveshark.js',
+47 silly resolved     dependencies:
+47 silly resolved      { cli: '~0.4.5',
+47 silly resolved        forever: '~0.10.8',
+47 silly resolved        'socket.io': '~0.9.16',
+47 silly resolved        'socket.io-client': '~0.9.16',
+47 silly resolved        chalk: '~0.2.0' },
+47 silly resolved     devDependencies: {},
+47 silly resolved     scripts:
+47 silly resolved      { test: 'echo "Error: no test specified" && exit 1',
+47 silly resolved        start: 'node libs/grooveshark.js' },
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'git://github.com/L1fescape/grooveshark-cli.git' },
+47 silly resolved     keywords: [ 'Grooveshark', 'cli' ],
+47 silly resolved     author: { name: 'Andrew Kennedy' },
+47 silly resolved     license: 'MIT',
+47 silly resolved     bugs: { url: 'https://github.com/L1fescape/grooveshark-cli/issues' },
+47 silly resolved     bin: { grooveshark: './lib/grooveshark.js' },
+47 silly resolved     readme: '## <img src="https://raw.github.com/L1fescape/grooveshark-cli-chrome/master/images/logo.png" />\n> Grooveshark in your terminal.\n\nUses [socket.io](https://github.com/LearnBoost/socket.io) to pass messages back and forth between an open [Grooveshark](http://grooveshark.com) instance in Google Chrome and your terminal. In order to achieve this, an instance of a socket.io server is spawned as a daemon, serving as the middle-ware between the Chrome Extension and the CLI client. \n\nDon\'t limit controlling Grooveshark to just your terminal! You can use any client to connect to the socket.io server to pass commands to Grooveshark (Android app, iOS app, etc).\n\n## Install\n\n#### CLI\n\nInstall with [npm](https://npmjs.org/package/grooveshark-cli): `npm install -g grooveshark-cli`\n\n#### Chrome Extension\n\n`git clone git@github.com:L1fescape/grooveshark-cli-chrome.git`\n\nLoad the Chrome Extension:\n\n- Open `chrome://extensions` in Chrome\n- Click `Load Unpacked Extension`\n- Navigate to where you cloned the Grooveshark CLI Chrome Extension repo\n- `Open`\n\n\nThat\'s it!\n\n## Example\n\n```js\n// start the server\ngrooveshark start-server\n\n// restore previous queue\ngrooveshark restore\n\n// show the queue\ngrooveshark queue\n//=> Number of Songs: 4\n//=>\n//=>   1. Lower Your Eyelids to Die With the Sun by M83\n//=> > 2. Midnight City by M83\n//=>   3. Moonchild by M83\n//=>   4. Soon, My Friend by M83\n\n// play current song\ngrooveshark play\n\n// get the status of the player\ngrooveshark status\n//=> Playing 00:02 / 04:04\n//=> Artist: M83\n//=> Song: Midnight City\n\n// stop playing\ngrooveshark stop\n\n// kill the server\ngrooveshark stop-server\n```\n\n\n## API\n\n#### grooveshark start-server\n\nStarts the server component as a daemon if it\'s not running already.\n\n#### grooveshark stop-server \n\n**WARNING:** Currently doesn\'t work. Kill with `ps ax | grep node; kill -9 [process id]`. Super sorry, can\'t find a way to kill a [forever](https://github.com/nodejitsu/forever) daemon right now.\n\nStops the server daemon if it\'s currently running.\n\n#### grooveshark play \\[song index\\]\n\nStarts playing a song or resumes playback. If an index in the queue is included, play song at that index.\n\n#### grooveshark pause\n\nPauses currently playing song.\n\n#### grooveshark stop\n\nStops playback.\n\n#### grooveshark next\n\nPlays next song in queue if there is one.\n\n#### grooveshark prev\n\nPlays previous song in queue if there is one.\n\n#### grooveshark vol \\[volume level\\]\n\nSets the volume level of the player (0-100)\n\n#### grooveshark mute\n\nToggles mute.\n\n#### grooveshark clear\n\nClears current queue. \n\n#### grooveshark restore\n\nRestores previous queue if there is one to restore.\n\n## Todo\n\n- Find a better way to start and stop the socket.io server. Currently no way to detect if it is already running or not.\n- Make `stop-server` actually do what it\'s supposed to do.\n- Status can accept a format string that returns the status of the player in the format passed in.\n- Document Server API so it\'s easier for people to write clients to connect and use it.\n\n## Contributing\n\nIf you see a bug, raise an issue via [GitHub](https://github.com/L1fescape/grooveshark-cli/issues) or better yet, submit a [pull request](https://github.com/L1fescape/grooveshark-cli/pull)!\n\nIf there\'s an issue with the Chrome Extension, open an issue in the [Grooveshark CLI Chrome Extension repo](https://github.com/L1fescape/grooveshark-cli-chrome/issues).\n\nAll feedback and suggestions welcome.\n\n## License\n\nMIT License • © [Andrew Kennedy](https://github.com/L1fescape)\n',
+47 silly resolved     readmeFilename: 'README.md',
+47 silly resolved     _id: 'grooveshark-cli@0.1.4',
+47 silly resolved     dist:
+47 silly resolved      { shasum: '9b25463c8126b6e020d8608d2eaf03385ba1ec81',
+47 silly resolved        tarball: 'http://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz' },
+47 silly resolved     _from: 'grooveshark-cli@',
+47 silly resolved     _npmVersion: '1.2.24',
+47 silly resolved     _npmUser: { name: 'l1fescape', email: 'andrew@akenn.org' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     directories: {},
+47 silly resolved     _shasum: '9b25463c8126b6e020d8608d2eaf03385ba1ec81',
+47 silly resolved     _resolved: 'https://registry.npmjs.org/grooveshark-cli/-/grooveshark-cli-0.1.4.tgz' } ]
+48 info install grooveshark-cli@0.1.4 into /usr/lib
+49 info installOne grooveshark-cli@0.1.4
+50 verbose lib/node_modules/grooveshark-cli unbuild
+51 verbose tar unpack /home/daniel/.npm/grooveshark-cli/0.1.4/package.tgz
+52 silly lockFile 3b6bd83d-lib-node-modules-grooveshark-cli tar:///usr/lib/node_modules/grooveshark-cli
+53 verbose lock tar:///usr/lib/node_modules/grooveshark-cli /home/daniel/.npm/3b6bd83d-lib-node-modules-grooveshark-cli.lock
+54 silly lockFile 95f16761-rooveshark-cli-0-1-4-package-tgz tar:///home/daniel/.npm/grooveshark-cli/0.1.4/package.tgz
+55 verbose lock tar:///home/daniel/.npm/grooveshark-cli/0.1.4/package.tgz /home/daniel/.npm/95f16761-rooveshark-cli-0-1-4-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/grooveshark-cli'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/grooveshark-cli']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/grooveshark-cli',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/grooveshark-cli',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:107:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.16.0-31-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "-g" "grooveshark-cli"
+61 error cwd /home/daniel/src/quiz
+62 error node -v v0.10.33
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/grooveshark-cli
+65 error fstream_path /usr/lib/node_modules/grooveshark-cli
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/grooveshark-cli'
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:107:15)
+72 verbose exit [ 3, true ]

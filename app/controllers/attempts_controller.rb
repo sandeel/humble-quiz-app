@@ -1,3 +1,5 @@
+require 'quiz-score-calculator'
+
 class AttemptsController < ApplicationController
 
   def index
@@ -15,18 +17,16 @@ class AttemptsController < ApplicationController
     @quiz = Quiz.find(params[:quiz_id])
     @attempt = @quiz.attempts.create(attempt_params)
 
-    total_num_questions = @quiz.questions.count
+    questions = @quiz.questions.all
+    answers_given = []
 
-    total_score=0.0
-    for question in @quiz.questions.all
+    for question in questions
         key = ("question_" + question.id.to_s)
-        answer_given = params['question_'.concat(question.id.to_s)].to_i
-        if answer_given == question.correct_answer
-            total_score += 1.0
-        end
+        answers_given.push(params['question_'.concat(question.id.to_s)].to_i)
     end
 
-    result_percentage = ( (total_score / total_num_questions) * 100)
+    # Use the QuizScoreCalculator gem to calculate the user's result
+    result_percentage = QuizScoreCalculator.getResult(questions, answers_given)
 
     @attempt.result=result_percentage
     @attempt.save
