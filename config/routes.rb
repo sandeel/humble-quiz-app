@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   resources :quizzes do
     resources :questions
     resources :attempts
+    collection do
+      get 'generate_next'
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

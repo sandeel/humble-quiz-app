@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150309165414) do
+ActiveRecord::Schema.define(version: 20150317160601) do
 
   create_table "attempts", force: :cascade do |t|
     t.integer  "quiz_id"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20150309165414) do
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "difficulty"
   end
 
 end

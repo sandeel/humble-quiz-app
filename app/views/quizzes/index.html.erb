@@ -1,13 +1,19 @@
 <h1>Humble Quiz App</h1>
+<h2><%= @average %></h2>
  
 <table>
   <tr>
     <th>Title</th>
+    <th>Difficulty</th>
   </tr>
  
   <% @quizzes.each do |quiz| %>
     <tr>
       <td><%= link_to quiz.title, quiz_path(quiz) %></td>
+      <td><%= quiz.difficulty %></td>
     </tr>
   <% end %>
 </table>
+
+<%= link_to "New", action: "generate_next" %>
+

@@ -1,3 +1,6 @@
 <h1>Quiz completed.</h1>
 
 <h2>Result: <%= @attempt.result %></h2>
+
+<%= link_to( "Gimme another one!", :controller => "quizzes", :action => "generate_next") %>
+

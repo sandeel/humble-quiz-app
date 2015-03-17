@@ -4,6 +4,16 @@
   </h1>
 </p>
 
+<%= form_for(@quiz) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %><br>
+    <%= f.label :difficulty %>
+    <%= f.number_field :difficulty %><br>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
 <% @quiz.questions.each do |question| %>
   <h2>
     <%= question.text %>
@@ -29,10 +39,4 @@
                    data: { confirm: 'Are you sure?' } %>
     </p>
 <% end %>
-
- 
-
-
-
-
 <%= render 'form' %>

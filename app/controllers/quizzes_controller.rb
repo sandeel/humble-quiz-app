@@ -1,7 +1,10 @@
+require 'next-quiz-generator'
+
 class QuizzesController < ApplicationController
 
   def index
     @quizzes = Quiz.all
+    @average = Attempt.average(:result)
   end
 
   def show
@@ -32,8 +35,13 @@ class QuizzesController < ApplicationController
     end
   end
 
+  def generate_next
+    @quiz = NextQuizGenerator.getNextQuiz(Attempt.all, Quiz.all)
+    redirect_to @quiz
+  end
+
   private
     def quiz_params
-      params.require(:quiz).permit(:title)
+      params.require(:quiz).permit(:title, :difficulty)
     end
 end
