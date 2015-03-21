@@ -22,7 +22,7 @@ class NextQuizGenerator
     average_score_based_on_attempts =  (scores_so_far.sum / scores_so_far.size.to_f)
 
 
-    ## sort the quizzes in descending orfer of difficulty and
+    ## sort the quizzes in descending order of difficulty and
     ## iterate through them until we find one matching the user's level
 
     for quiz in available_quizzes.order('difficulty DESC')

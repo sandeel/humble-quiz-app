@@ -1,6 +1,6 @@
 <p>
   <h1>
-    Edit <%= @quiz.title %>
+    Edit quiz "<%= @quiz.title %>"
   </h1>
 </p>
 
@@ -15,9 +15,12 @@
 <% end %>
 
 <% @quiz.questions.each do |question| %>
-  <h2>
-    <%= question.text %>
-  </h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <%= question.text %>
+      </h3>
+    </div>
     <p>
       <%= radio_button_tag("question_".concat(question.id.to_s), 1) %>
       <label for="<%= question.id %>_1"><%= question.answer_one %></label>
@@ -34,9 +37,13 @@
       <label for="<%= question.id %>_4"><%= question.answer_four %></label>
     </p>
     <p>
-      <%= link_to 'Delete Question', [question.quiz, question],
+      <%= link_to 'Delete', [question.quiz, question],
                    method: :delete,
                    data: { confirm: 'Are you sure?' } %>
     </p>
+  </div>
 <% end %>
 <%= render 'form' %>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">

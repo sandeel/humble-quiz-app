@@ -1,7 +1,14 @@
-<%= form_for([@quiz, @quiz.attempts.build]) do |f| %>
-<%= render 'quiz' %>
-    <%= f.hidden_field :result %>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <%= form_for([@quiz, @quiz.attempts.build]) do |f| %>
+    <%= render 'quiz' %>
+        <%= f.hidden_field :result %>
+      <p>
+        <%= f.submit 'Done' %>
+      </p>
+    <% end %>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+

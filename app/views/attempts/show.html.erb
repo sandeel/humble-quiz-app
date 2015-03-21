@@ -1,6 +1,8 @@
-<h1>Quiz completed.</h1>
 
-<h2>Result: <%= @attempt.result %></h2>
 
-<%= link_to( "Gimme another one!", :controller => "quizzes", :action => "generate_next") %>
-
+<div class="jumbotron">
+  <h2>Quiz completed.</h2>
+  <h1>Result: <%= @attempt.result %>%</h1>
+  Generate next quiz
+  <p><a class="btn btn-primary btn-lg" href="/quizzes/generate_next" role="button">Gimme another one!</a></p>
+</div>

@@ -1,4 +1,6 @@
-
+# Introduction
+Humble Quiz App is a simple learning application for a first-year NCI student to
+learn the Object Oriented Programming module.
 
 ## Use of Github and pushing the initial application
 
@@ -131,11 +133,17 @@ Example use of the gem in the main application:
     QuizScoreCalculator.getResult(the_questions, the_answers_given)
 
 ## External Gems
+
+## Bootstrap
+I used Bootstrap for the theming of the application. To get better integration with rails, I installed the Bootstrap gem.
+
+I added `gem "twitter-bootstrap-rails"` to my Gemfile and ran the following commands to install it:
+
+    bundle install
+    rails generate bootstrap:install static
+
 ### Gaffe
-Gaffe was used to generate custom error pages for Rails. More details on this below.
-
-
-
+Gaffe was used to generate custom error pages for Rails.
 
 ## Custom error handling pages
 
@@ -166,3 +174,8 @@ page, simple try to navigate to a quiz with an id which doesn't exist (see figur
 ## Deployment to Heroku
 
 
+## Rails
+
+### Weaknesses of Rails
+I found that when dealing with Rails it was important to ensure you have a good layout for Models before creating them.
+The reason 

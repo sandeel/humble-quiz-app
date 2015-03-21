@@ -1,19 +1,46 @@
-<h1>Humble Quiz App</h1>
-<h2><%= @average %></h2>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Difficulty</th>
-  </tr>
- 
-  <% @quizzes.each do |quiz| %>
-    <tr>
-      <td><%= link_to quiz.title, quiz_path(quiz) %></td>
-      <td><%= quiz.difficulty %></td>
-    </tr>
-  <% end %>
-</table>
+<div class="page-header" style="text-align: center">
+  <h1>Humble Quiz App</h1>
+  <h1>Object Oriented Programming</h1>
+</div>
 
-<%= link_to "New", action: "generate_next" %>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+ 
+      <% @quizzes.each do |quiz| %>
+        <div class="panel panel-default" style="margin: 2px">
+          <div class="panel-body">
+            <%= link_to quiz.title, quiz_path(quiz) %>
+            <span style="float: right;">Difficulty: <%= quiz.difficulty %></span>
+          </div>
+        </div>
+      <% end %>
 
+    <hr />
+
+    <div class="panel panel-default">
+      <div class="panel-body" style="text-align: center">
+        <a href = "quizzes/new">
+          Create a new quiz
+        </a>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="panel panel-default">
+      <div class="panel-body" style="text-align: center">
+        Selects a suitable quiz for me based on my learning so far...
+        <a href = "quizzes/generate_next">
+          <button type="button" class="btn btn-primary btn-lg">Hit me</button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-4"></div>
+</div>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
