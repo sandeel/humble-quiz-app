@@ -2,7 +2,10 @@
 Humble Quiz App is a simple learning application for a first-year NCI student to
 learn the Object Oriented Programming module.
 
-## Use of Github and pushing the initial application
+
+# Techinal Overview
+
+## Use of Github for version control
 
 I generated the Rails application using
 
@@ -131,6 +134,31 @@ Example use of the gem in the main application:
     require 'quiz-score-calculator'
 
     QuizScoreCalculator.getResult(the_questions, the_answers_given)
+    
+The algorithm for calculating a score looks like this
+
+  def self.getResult(questions, answers_given)
+
+    # get the total number of questions
+    total_num_questions = questions.count
+
+    # initialise the score
+    total_score=0.0
+
+    # zip the questions and answers together and iterate over each
+    # if the answer given is correct, increase the total score
+    questions.zip(answers_given).each do |question, answer|
+        if answer == question.correct_answer
+            total_score += 1.0
+        end
+    end
+
+    # calculate the score as a percentage of the questions asked
+    result_percentage = ( (total_score / total_num_questions) * 100)
+
+    return result_percentage
+
+  end
 
 ## External Gems
 
@@ -178,4 +206,7 @@ page, simple try to navigate to a quiz with an id which doesn't exist (see figur
 
 ### Weaknesses of Rails
 I found that when dealing with Rails it was important to ensure you have a good layout for Models before creating them.
-The reason 
+
+The reason for this is that Rails doesn't allow one to define models in a source file (for example in Spring MVC or Django MVC changes to the Model class are automatically picked up on and the database migrations are created). Instead models are generated via the command line and later updated using Rails commands such as
+
+      bin/rails g migration AddDifficultyToQuizzes difficulty:int        
